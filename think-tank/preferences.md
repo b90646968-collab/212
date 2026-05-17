@@ -23,3 +23,11 @@
 ## Storage
 
 - The user wants this harness stored in a private GitHub repository.
+
+## Security
+
+- Do not ask the user to paste GitHub tokens, API keys, access tokens, or other credentials into chat.
+- Do not expose token values in command output, logs, commit messages, docs, URLs, or config files.
+- Prefer browser login, Git credential prompts, or macOS Keychain-backed credential storage for GitHub authentication.
+- Explain where a credential will be stored before handling it.
+- Treat selected strings that look token-like as sensitive unless clearly harmless.

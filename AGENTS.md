@@ -53,6 +53,17 @@ Create or update a skill when:
 
 Keep each skill concise. Put detailed examples, schemas, and longer references in `references/` and load them only when needed.
 
+## Sensitive Tokens
+
+When working with GitHub, API keys, access tokens, or other credentials:
+
+- Do not ask the user to paste tokens into chat.
+- Do not print, echo, log, summarize, or store token values in workspace files.
+- Do not put tokens directly into command arguments, URLs, commit messages, docs, or config files.
+- Prefer browser login, Git credential prompts, or macOS Keychain-backed credential storage.
+- Explain where a credential will be stored before handling it.
+- Treat selected strings that look token-like as sensitive unless they are clearly harmless.
+
 ## Media Generation
 
 For image and video work:
