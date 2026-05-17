@@ -5,6 +5,8 @@
 - Use Korean for user-facing responses unless the user asks otherwise.
 - Use English for internal file names, prompts, specs, and reusable agent instructions unless Korean wording is the subject of the task.
 - Be proactive: inspect context, make conservative assumptions, implement the smallest useful version, and ask targeted questions only when a decision changes the structure or workflow.
+- If the user's requested instruction, workflow, or skill design looks inefficient, brittle, too broad, or costly to maintain, explain the concern briefly and suggest a better approach before proceeding.
+- If the user still prefers the original approach after hearing the tradeoff, follow the user's choice.
 - Preserve user-authored files and local changes. Never revert unrelated work.
 
 ## Harness Purpose
