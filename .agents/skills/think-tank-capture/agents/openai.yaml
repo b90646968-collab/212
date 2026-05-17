@@ -1,0 +1,4 @@
+interface:
+  display_name: "Think Tank Capture"
+  short_description: "Save reusable user memory."
+  default_prompt: "Use $think-tank-capture to save this durable preference, decision, prompt pattern, or idea."
