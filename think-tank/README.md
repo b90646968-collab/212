@@ -26,6 +26,7 @@ Do not save secrets, API keys, access tokens, private credentials, or recovery p
 - `prompts/image-generation.md`: Reusable image prompt template and notes.
 - `prompts/video-generation.md`: Reusable video prompt template and notes.
 - `projects/`: Project-specific memory. Start from `projects/_template.md`.
+- `projects/red-frame-trigger.md`: Yura / Yuri anime opening project memory and saved character prompts.
 
 ## Routing Rules
 
