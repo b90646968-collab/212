@@ -16,6 +16,8 @@
 ## Media
 
 - The user plans to create images with GPT.
+- Default generated image aspect ratio is 16:9 unless the user asks for a different ratio.
+- Whenever generating an image, derive and provide the final prompt used for the generation.
 - The user plans to create videos with Grok, Seedance, and possibly other generation tools.
 - Organize media-generation memory and prompts by project first.
 - Use tool-specific sections inside a project when needed.
