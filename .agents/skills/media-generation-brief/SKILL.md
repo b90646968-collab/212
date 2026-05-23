@@ -13,11 +13,12 @@ description: Create reusable image and video generation briefs for GPT image gen
 4. Produce a neutral creative brief first when the target tool is unclear.
 5. Adapt into tool-specific prompts only after the target tool is known or clearly implied.
 6. Organize reusable media work by project under `think-tank/projects/`; use tool-specific sections inside the project when needed.
-7. Save reusable patterns into `think-tank/prompts/` only after the user gives permission.
+7. For Red Frame Trigger, consult `think-tank/projects/red-frame-trigger/storyboard.md` before writing prompts.
+8. Save reusable prompt files only after the user gives permission, and prefer project-specific prompt banks over generic templates.
 
 ## Image Brief Shape
 
-Use `think-tank/prompts/image-generation.md` as the default template.
+Use the active project storyboard or project memory as the default source. If no project source exists, write the brief inline instead of relying on a generic saved template.
 
 Include:
 
@@ -31,7 +32,7 @@ Include:
 
 ## Video Brief Shape
 
-Use `think-tank/prompts/video-generation.md` as the default template.
+Use the active project storyboard or project memory as the default source. If no project source exists, write the brief inline instead of relying on a generic saved template.
 
 Include:
 

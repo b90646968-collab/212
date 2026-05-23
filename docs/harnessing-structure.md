@@ -32,7 +32,6 @@ Sources:
 │   ├── preferences.md
 │   ├── lexicon.md
 │   ├── decisions.md
-│   ├── prompts/
 │   └── projects/
 └── docs/
 ```
@@ -42,7 +41,7 @@ Sources:
 1. `AGENTS.md` controls default behavior for Codex in this workspace.
 2. `think-tank-capture` records durable user preferences and repeated ideas.
 3. `media-generation-brief` turns image/video ideas into reusable generation briefs.
-4. `think-tank/` stores the durable material those skills should read and update.
+4. `think-tank/` stores durable project memory, decisions, and storyboard references those skills should read and update.
 
 ## First Questions To Resolve
 

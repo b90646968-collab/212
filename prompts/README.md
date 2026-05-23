@@ -6,7 +6,4 @@ Texture-only prompt notes for photorealistic portrait work. Use this when you wa
 
 ## Other Files
 
-- `01_character_prompt.md` - original fictional character prompt
-- `02_brand_prompt.md` - fictional brand prompt
-- `03_runway_video_prompt.md` - runway video prompt
 - `test-h01_texture.md` - texture reference prompt

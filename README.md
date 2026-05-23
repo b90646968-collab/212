@@ -47,16 +47,14 @@ This workspace is intentionally small:
     skills/
   docs/
   prompts/
-    01_character_prompt.md
-    02_brand_prompt.md
-    03_runway_video_prompt.md
+    README.md
+    test-h01_texture.md
   references/
   outputs/
     images/
     videos/
   think-tank/
     projects/
-    prompts/
   test/
     test.md
 ```

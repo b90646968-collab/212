@@ -6,8 +6,10 @@
 - `lexicon.md`: user-specific terms, meanings, abbreviations, and naming conventions.
 - `decisions.md`: dated decisions that explain why the harness is shaped a certain way.
 - `inbox.md`: temporary holding area for unsorted but potentially useful notes.
-- `prompts/*.md`: reusable prompt structures and examples.
 - `projects/*.md`: project-specific context and assets.
+- `projects/<project>/profiles/*.md`: durable character profiles and source-of-truth visual standards.
+- `projects/<project>/storyboard.md`: project sequence, story beats, and prompt source-of-truth notes.
+- `projects/<project>/prompts/*`: project-specific reusable prompt structures and examples.
 
 ## Entry Quality
 

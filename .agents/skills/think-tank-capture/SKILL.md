@@ -19,8 +19,10 @@ description: Capture durable user preferences, repeated wording, project decisio
 - `think-tank/lexicon.md`: user-specific terms and meanings.
 - `think-tank/decisions.md`: dated decisions about this harness or a project.
 - `think-tank/inbox.md`: raw notes that are useful but not sorted yet.
-- `think-tank/prompts/`: reusable image, video, and tool-specific prompt patterns.
 - `think-tank/projects/`: project-specific memory using `_template.md`.
+- `think-tank/projects/<project>/profiles/`: durable character profiles and source-of-truth visual standards.
+- `think-tank/projects/<project>/storyboard.md`: project opening/story beats that should guide future prompts.
+- `think-tank/projects/<project>/prompts/`: project-specific prompt files when the user wants durable prompts saved.
 
 ## Capture Rules
 

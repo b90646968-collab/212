@@ -1,4 +1,7 @@
 .DS_Store
+.tmp.driveupload/
+tmp/
+tools/ffmpeg/
 
 # Local generated outputs can be moved here if needed.
 outputs/

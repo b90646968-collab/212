@@ -10,3 +10,5 @@
 - Organize media-generation prompts and memory by project.
 - Let Codex automatically notice repeated user patterns, but require user permission before writing them into `think-tank/`.
 - Store only repeated or durable patterns unless the user explicitly asks to save a one-off note.
+- Keep Red Frame Trigger durable prompt files focused on Yura and Yuri.
+- Use a storyboard as the working source of truth for Red Frame Trigger so every new image or video prompt has a stable opening-beat reference.
