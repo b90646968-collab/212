@@ -24,17 +24,18 @@ Do not save secrets, API keys, access tokens, private credentials, or recovery p
 - `decisions.md`: Dated decisions about the harness, storage model, and project structure.
 - `inbox.md`: Temporary holding area for useful notes that are not sorted yet.
 - `projects/`: Project-specific memory. Start from `projects/_template.md`.
-- `projects/red-frame-trigger.md`: Yura / Yuri anime opening project memory and saved character prompts.
-- `projects/red-frame-trigger/storyboard.md`: Source of truth for Red Frame Trigger opening beats before prompt writing.
-- `projects/red-frame-trigger/profiles/`: Canonical character profiles used by the storyboard and prompt files.
-- `projects/red-frame-trigger/prompts/`: Project-specific prompt files, currently limited to Yura and Yuri focused prompts.
+- `projects/yara/README.md`: Umbrella index for Yara-related creative work so it stays separate from unrelated projects.
+- `projects/yara/red-frame-trigger.md`: Yura / Yuri anime opening project memory and saved character prompts.
+- `projects/yara/red-frame-trigger/storyboard.md`: Source of truth for Red Frame Trigger opening beats before prompt writing.
+- `projects/yara/red-frame-trigger/profiles/`: Canonical character profiles used by the storyboard and prompt files.
+- `projects/yara/red-frame-trigger/prompts/`: Project-specific prompt files, currently limited to Yura and Yuri focused prompts.
 
 ## Routing Rules
 
 - If it changes how Codex should behave, put it in the root `AGENTS.md`.
 - If it is a repeated preference or memory, put it in the most specific think-tank file.
 - If it is a reusable task procedure, put it in `.agents/skills/`.
-- If it is a Red Frame Trigger opening beat, put it in the project storyboard before turning it into a prompt.
+- If it is a Yara / Red Frame Trigger opening beat, put it in `projects/yara/red-frame-trigger/storyboard.md` before turning it into a prompt.
 - If it is a durable character standard, put it in the relevant project profile.
 - If it is uncertain but useful, put it in `inbox.md`.
 

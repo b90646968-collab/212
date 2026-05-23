@@ -12,3 +12,4 @@
 - Store only repeated or durable patterns unless the user explicitly asks to save a one-off note.
 - Keep Red Frame Trigger durable prompt files focused on Yura and Yuri.
 - Use a storyboard as the working source of truth for Red Frame Trigger so every new image or video prompt has a stable opening-beat reference.
+- 2026-05-23: Store Yara / Red Frame Trigger work under `think-tank/projects/yara/` so unrelated projects do not mix with these prompts, profiles, and storyboard notes.

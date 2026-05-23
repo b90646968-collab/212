@@ -55,6 +55,10 @@ This workspace is intentionally small:
     videos/
   think-tank/
     projects/
+      yara/
+        README.md
+        red-frame-trigger.md
+        red-frame-trigger/
   test/
     test.md
 ```

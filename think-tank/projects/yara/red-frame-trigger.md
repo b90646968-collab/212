@@ -10,7 +10,7 @@ Yuri disappeared, and Yura is chasing after the traces she left behind. The open
 
 ## Storyboard Rule
 
-- Use `storyboard.md` as the working source of truth before creating or editing image, video, or opening-cut prompts.
+- Use `red-frame-trigger/storyboard.md` as the working source of truth before creating or editing image, video, or opening-cut prompts.
 - Keep the saved prompt bank focused on Yura and Yuri unless the user explicitly asks to add prompts for another character, prop, symbol, or environment.
 - Put broad opening structure, worldbuilding, and supporting visual ideas into the storyboard first.
 
@@ -26,7 +26,7 @@ Yuri disappeared, and Yura is chasing after the traces she left behind. The open
 ### Yura
 
 - Main heroine.
-- Canonical profile: `profiles/yura.md`.
+- Canonical profile: `red-frame-trigger/profiles/yura.md`.
 - Confirmed by user on 2026-05-21: the right-side character in `형제.jpg` is Yura.
 - Confirmed by user on 2026-05-21: `유라 악몽최종.png` is Yura.
 - Confirmed by user on 2026-05-21: `유라 반지제거.png` is Yura.
@@ -37,7 +37,7 @@ Yuri disappeared, and Yura is chasing after the traces she left behind. The open
 ### Yuri
 
 - Yura's older twin sister.
-- Canonical profile: `profiles/yuri.md`.
+- Canonical profile: `red-frame-trigger/profiles/yuri.md`.
 - Confirmed by user on 2026-05-21: the left-side character in `형제.jpg` is Yuri.
 - Core story role: Yuri disappeared, and Yura follows her traces.
 - Confirmed by user on 2026-05-18: the latest generated older twin sister character is Yuri.
@@ -60,7 +60,7 @@ Yuri disappeared, and Yura is chasing after the traces she left behind. The open
 ### Yuri Image Prompt
 
 ```text
-Use `profiles/yuri.md` as the canonical Yuri prompt source.
+Use `red-frame-trigger/profiles/yuri.md` as the canonical Yuri prompt source.
 
 Short form: Yuri is Yura's older twin sister, the left-side character in `형제.jpg`, and the disappeared twin Yura is chasing. She shares Yura's exact cool gray-blue wet painterly anime color and texture system, but has shoulder-length black wavy hair, pale mirror-gray eyes, a mature unreadable expression, black tailored suit styling, and mirror/film disappearance motifs.
 ```
@@ -82,8 +82,8 @@ too identical to Yura, Yura's finger-gun pose, hands reaching toward camera, viv
 - 2026-05-21: For Yuri's rubber-band intermission image, the red rubber band must clearly form a readable five-point star. This is more important than background effects.
 - 2026-05-21: Yuri's eyes should lean pale gray/light gray and glassy, not vivid red; faint cold red/rose tint is acceptable only as a subtle undertone.
 - 2026-05-21: Keep durable prompt files focused on Yura and Yuri. Use the storyboard as the first reference for opening structure and only create new prompt files from confirmed storyboard beats.
-- 2026-05-21: Yura's canonical references are the right-side character in `형제.jpg`, `유라 악몽최종.png`, and `유라 반지제거.png`. Use `profiles/yura.md` as the future Yura standard.
-- 2026-05-21: Yuri's canonical reference is the left-side character in `형제.jpg`. Use `profiles/yuri.md` as the future Yuri standard.
+- 2026-05-21: Yura's canonical references are the right-side character in `형제.jpg`, `유라 악몽최종.png`, and `유라 반지제거.png`. Use `red-frame-trigger/profiles/yura.md` as the future Yura standard.
+- 2026-05-21: Yuri's canonical reference is the left-side character in `형제.jpg`. Use `red-frame-trigger/profiles/yuri.md` as the future Yuri standard.
 - 2026-05-21: Core story premise: Yuri disappeared, and Yura is chasing after Yuri's traces.
 - 2026-05-21: Yuri must share Yura's exact color palette and wet painterly texture; only silhouette, hair, expression, pose, and motif should distinguish her.
 

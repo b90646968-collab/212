@@ -15,7 +15,7 @@ Prompts should be generated from a storyboard beat first, not from isolated visu
 
 - Keep the prompt bank focused on Yura and Yuri only.
 - Store broad world details, symbols, props, and environment ideas as storyboard beats unless the user asks for a dedicated prompt.
-- Preserve Yura and Yuri continuity from `think-tank/projects/red-frame-trigger.md`.
+- Preserve Yura and Yuri continuity from `../red-frame-trigger.md`.
 - Prefer emotional opening plates over action shots.
 - Default format is 16:9 unless the user asks otherwise.
 - Every generated image prompt should include the final prompt used.

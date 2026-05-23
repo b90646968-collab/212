@@ -33,6 +33,10 @@ Sources:
 │   ├── lexicon.md
 │   ├── decisions.md
 │   └── projects/
+│       └── yara/
+│           ├── README.md
+│           ├── red-frame-trigger.md
+│           └── red-frame-trigger/
 └── docs/
 ```
 

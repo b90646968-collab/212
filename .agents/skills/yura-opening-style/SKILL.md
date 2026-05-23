@@ -11,16 +11,16 @@ Use this skill to keep Yura and related opening characters visually consistent: 
 
 ## Standing User Constraints
 
-- Until the user gives a separate override, all image/photo creation for this project must use the color, lighting, and texture baseline from `think-tank/projects/red-frame-trigger/profiles/yura.md`.
+- Until the user gives a separate override, all image/photo creation for this project must use the color, lighting, and texture baseline from `think-tank/projects/yara/red-frame-trigger/profiles/yura.md`.
 - For any photo/image/keyframe creation or raster image edit, always invoke and follow the `imagegen` skill together with this skill before generating. Do not create images through a generic prompt-only workflow, and do not skip `imagegen` even when the request sounds simple.
 - Do not create extra prompts beyond what the user explicitly asks for. Avoid unsolicited prompt packs, variants, alternates, expansions, or durable prompt files; produce only the prompt needed for the requested image.
 - If any existing instruction, prompt text, generated asset, or file conflicts with these constraints or lowers the Yura-profile color/texture quality, do not delete it automatically. First identify the exact item, explain the conflict or quality risk, ask the user for permission, and delete only approved items.
 
 ## Storyboard-First Workflow
 
-- Before creating or refining a Red Frame Trigger opening prompt, consult `think-tank/projects/red-frame-trigger/storyboard.md`.
-- For any Yura cut, consult `think-tank/projects/red-frame-trigger/profiles/yura.md` after choosing the storyboard beat.
-- For any Yuri cut, consult `think-tank/projects/red-frame-trigger/profiles/yuri.md` after choosing the storyboard beat.
+- Before creating or refining a Red Frame Trigger opening prompt, consult `think-tank/projects/yara/red-frame-trigger/storyboard.md`.
+- For any Yura cut, consult `think-tank/projects/yara/red-frame-trigger/profiles/yura.md` after choosing the storyboard beat.
+- For any Yuri cut, consult `think-tank/projects/yara/red-frame-trigger/profiles/yuri.md` after choosing the storyboard beat.
 - Derive each image or video prompt from a storyboard beat first.
 - If the requested cut is not in the storyboard yet, add or revise the storyboard beat before producing the final prompt.
 - Keep durable prompt files focused on Yura and Yuri unless the user explicitly asks to create prompt files for another subject.
@@ -73,8 +73,8 @@ semi-realistic painterly anime illustration, loose wet digital watercolor brushw
 ## Visual Continuity Rules
 
 - Build every opening character by referencing Yura first. New characters should feel like they belong to Yura's story world, using her painterly rendering, emotional restraint, cool blue-gray atmosphere, and symbolic memory/editing motifs as the baseline.
-- Keep Yura's identity anchored by the canonical profile in `think-tank/projects/red-frame-trigger/profiles/yura.md`: deep blue-black hair, straight full bangs, twin-tail sections, vivid muted red eyes, pale translucent skin, and a quiet but dangerous expression.
-- Keep Yuri's identity anchored by the canonical profile in `think-tank/projects/red-frame-trigger/profiles/yuri.md`: Yura's older twin sister, left-side character in `형제.jpg`, shoulder-length black wavy hair, pale mirror-gray eyes, black tailored suit, mature calm expression, and mirror/film disappearance motifs.
+- Keep Yura's identity anchored by the canonical profile in `think-tank/projects/yara/red-frame-trigger/profiles/yura.md`: deep blue-black hair, straight full bangs, twin-tail sections, vivid muted red eyes, pale translucent skin, and a quiet but dangerous expression.
+- Keep Yuri's identity anchored by the canonical profile in `think-tank/projects/yara/red-frame-trigger/profiles/yuri.md`: Yura's older twin sister, left-side character in `형제.jpg`, shoulder-length black wavy hair, pale mirror-gray eyes, black tailored suit, mature calm expression, and mirror/film disappearance motifs.
 - Keep Yuri and Yura in the same color and texture system. Yuri should never look like a separate art direction from Yura.
 - Vary characters through role, silhouette, accent color, motif, expression, and costume details rather than switching to a different art style or unrelated design language.
 - Use red sparingly as a story signal: eyes, memory fragments, fingertip light, thread, or reflected highlights.

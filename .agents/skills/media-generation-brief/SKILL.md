@@ -13,7 +13,7 @@ description: Create reusable image and video generation briefs for GPT image gen
 4. Produce a neutral creative brief first when the target tool is unclear.
 5. Adapt into tool-specific prompts only after the target tool is known or clearly implied.
 6. Organize reusable media work by project under `think-tank/projects/`; use tool-specific sections inside the project when needed.
-7. For Red Frame Trigger, consult `think-tank/projects/red-frame-trigger/storyboard.md` before writing prompts.
+7. For Red Frame Trigger, consult `think-tank/projects/yara/red-frame-trigger/storyboard.md` before writing prompts.
 8. Save reusable prompt files only after the user gives permission, and prefer project-specific prompt banks over generic templates.
 
 ## Image Brief Shape
