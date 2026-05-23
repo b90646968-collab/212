@@ -12,3 +12,5 @@ Use this folder as the umbrella for Yara-related creative work. Keep unrelated p
 ## Routing Rule
 
 When the user asks for Yara, Yura, Yuri, or Red Frame Trigger work, check this folder before using generic prompt templates or unrelated project memory.
+
+Do not use this folder for unrelated new work. Keep these files out of new projects unless the user explicitly asks to continue or reference Yara / Yura / Yuri / Red Frame Trigger.

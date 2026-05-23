@@ -35,6 +35,8 @@ Do not save secrets, API keys, access tokens, private credentials, or recovery p
 - If it changes how Codex should behave, put it in the root `AGENTS.md`.
 - If it is a repeated preference or memory, put it in the most specific think-tank file.
 - If it is a reusable task procedure, put it in `.agents/skills/`.
+- Keep skills available globally, but load project folders only when the task explicitly belongs to that project.
+- Do not use `projects/yara/` for unrelated new work unless the user mentions Yara, Yura, Yuri, Red Frame Trigger, or asks to continue that project.
 - If it is a Yara / Red Frame Trigger opening beat, put it in `projects/yara/red-frame-trigger/storyboard.md` before turning it into a prompt.
 - If it is a durable character standard, put it in the relevant project profile.
 - If it is uncertain but useful, put it in `inbox.md`.

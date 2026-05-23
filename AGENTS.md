@@ -38,6 +38,13 @@ Capture policy:
 - Save only repeated or durable patterns unless the user explicitly asks to save a one-off note.
 - Organize media-generation memory by project first, then by tool inside the project when needed.
 
+Project isolation:
+
+- Keep skills available across all work, but treat project memory as opt-in by project.
+- When starting a new unrelated task, do not load, reuse, summarize, or blend `think-tank/projects/yara/` content unless the user explicitly mentions Yara, Yura, Yuri, Red Frame Trigger, or asks to continue that project.
+- Store new unrelated work in its own project folder under `think-tank/projects/` instead of adding it to `think-tank/projects/yara/`.
+- If a task might overlap with Yara but the user does not clearly say so, ask before using Yara project memory.
+
 Do not capture:
 
 - secrets, API keys, access tokens, private credentials, or recovery phrases
