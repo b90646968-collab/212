@@ -2,6 +2,7 @@
 .tmp.driveupload/
 tmp/
 tools/ffmpeg/
+.netlify/
 
 # Local generated outputs can be moved here if needed.
 outputs/
