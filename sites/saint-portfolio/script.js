@@ -1,6 +1,6 @@
 const videoEmbeds = {
   shortAd: "",
-  animeOpening: "",
+  animeOpening: "https://www.youtube.com/embed/7fAf4xVB7rg",
 };
 
 for (const frame of document.querySelectorAll("[data-embed-key]")) {
