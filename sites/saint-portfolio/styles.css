@@ -182,6 +182,98 @@ h3 {
   border-bottom: 1px solid var(--line);
 }
 
+.portfolio-part {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  scroll-margin-top: 86px;
+  padding: clamp(78px, 11vw, 148px) clamp(20px, 5vw, 72px);
+  border-top: 1px solid var(--line);
+}
+
+.portfolio-part::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background-position: center;
+  background-size: cover;
+  transform: scale(1.02);
+}
+
+.portfolio-part::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(180deg, rgba(8, 8, 9, 0.88), rgba(8, 8, 9, 0.64) 44%, rgba(8, 8, 9, 0.92)),
+    rgba(8, 8, 9, 0.48);
+}
+
+.portfolio-part--veil::before {
+  background-image:
+    linear-gradient(90deg, rgba(8, 8, 9, 0.96), rgba(8, 8, 9, 0.48)),
+    url("./assets/veil-billboard.jpg");
+}
+
+.portfolio-part--saint::before {
+  background-image:
+    linear-gradient(90deg, rgba(8, 8, 9, 0.94), rgba(8, 8, 9, 0.34)),
+    url("./assets/twins.jpg");
+}
+
+.part-shell {
+  position: relative;
+  z-index: 1;
+  max-width: 1360px;
+  display: grid;
+  gap: clamp(42px, 7vw, 86px);
+  margin: 0 auto;
+}
+
+.part-header {
+  max-width: 960px;
+}
+
+.part-header h2 {
+  max-width: 880px;
+}
+
+.part-header p:not(.eyebrow) {
+  max-width: 780px;
+  color: var(--silver);
+  font-size: clamp(17px, 2vw, 22px);
+  line-height: 1.75;
+}
+
+.part-block {
+  scroll-margin-top: 96px;
+  padding: clamp(22px, 4vw, 46px);
+  background: rgba(9, 9, 11, 0.82);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: var(--radius);
+  backdrop-filter: blur(18px);
+}
+
+.portfolio-part--veil .part-block {
+  border-color: rgba(218, 154, 62, 0.28);
+  background: rgba(7, 7, 8, 0.84);
+}
+
+.portfolio-part--saint .part-block {
+  border-color: rgba(216, 214, 207, 0.2);
+  background: rgba(11, 11, 14, 0.86);
+}
+
+.part-block .section__heading {
+  margin-bottom: 28px;
+}
+
+.part-block .section__heading h2 {
+  font-size: clamp(28px, 4vw, 50px);
+}
+
 .section__heading {
   max-width: 980px;
   margin-bottom: 36px;
@@ -209,7 +301,9 @@ h3 {
 .work-card,
 .embed-panel,
 .process-list article,
-.prompt-grid article {
+.prompt-grid article,
+.campaign-process article,
+.ad-storyline article {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--panel);
@@ -235,7 +329,11 @@ h3 {
 .process-list p,
 .prompt-grid p,
 .campaign-notes p,
-.campaign-notes li {
+.campaign-notes li,
+.campaign-intro p,
+.campaign-intro li,
+.campaign-process p,
+.ad-storyline p {
   color: var(--muted);
   line-height: 1.65;
 }
@@ -253,6 +351,11 @@ h3 {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 18px;
+}
+
+.video-grid--single {
+  max-width: 920px;
+  grid-template-columns: 1fr;
 }
 
 .embed-panel {
@@ -330,8 +433,117 @@ figcaption {
   align-items: center;
 }
 
+.ad-storyline {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.ad-storyline article {
+  padding: 20px;
+}
+
+.ad-storyline span {
+  color: #e8b76a;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.ad-storyline h3 {
+  margin: 10px 0 8px;
+}
+
+.campaign-part {
+  display: grid;
+  gap: 26px;
+}
+
+.campaign-part + .campaign-part {
+  margin-top: clamp(54px, 8vw, 96px);
+  padding-top: clamp(42px, 6vw, 72px);
+  border-top: 1px solid var(--line);
+}
+
+.campaign-intro {
+  max-width: 980px;
+}
+
+.campaign-kicker {
+  width: max-content;
+  margin: 0 0 12px;
+  padding: 6px 10px;
+  border: 1px solid rgba(216, 214, 207, 0.28);
+  border-radius: var(--radius);
+  color: var(--silver);
+  background: rgba(255, 255, 255, 0.06);
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.campaign-intro h3,
+.campaign-notes h3 {
+  font-size: clamp(26px, 4vw, 44px);
+}
+
+.campaign-intro ul {
+  display: grid;
+  gap: 8px;
+  margin: 18px 0 0;
+  padding-left: 18px;
+}
+
+.campaign-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.campaign-gallery figure {
+  min-height: 100%;
+}
+
+.campaign-gallery figure img {
+  aspect-ratio: 9 / 14;
+  min-height: 0;
+}
+
+.campaign-gallery .campaign-feature {
+  grid-row: span 2;
+}
+
+.campaign-gallery .campaign-feature img {
+  aspect-ratio: 9 / 21;
+}
+
+.campaign-process {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.campaign-process article {
+  padding: 20px;
+}
+
+.campaign-process span {
+  color: var(--red);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.campaign-process h4 {
+  margin: 10px 0 8px;
+  font-size: 17px;
+}
+
 .campaign-notes {
   padding: 10px 0;
+}
+
+.saint-board .campaign-layout {
+  align-items: start;
 }
 
 .campaign-notes ul {
@@ -388,12 +600,18 @@ figcaption {
   .intro,
   .campaign-layout,
   .video-grid,
-  .before-after {
+  .before-after,
+  .ad-storyline {
     grid-template-columns: 1fr;
   }
 
   .work-grid,
-  .prompt-grid {
+  .prompt-grid,
+  .campaign-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .campaign-process {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -426,8 +644,20 @@ figcaption {
 
   .work-grid,
   .prompt-grid,
-  .process-list {
+  .process-list,
+  .campaign-gallery,
+  .campaign-process,
+  .ad-storyline {
     grid-template-columns: 1fr;
+  }
+
+  .campaign-gallery .campaign-feature {
+    grid-row: auto;
+  }
+
+  .campaign-gallery .campaign-feature img,
+  .campaign-gallery figure img {
+    aspect-ratio: 4 / 5;
   }
 
   figure img {
