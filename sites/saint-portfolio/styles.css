@@ -486,10 +486,14 @@ figcaption {
   border-top: 1px solid var(--line);
 }
 
+.campaign-block {
+  display: grid;
+  gap: clamp(28px, 4vw, 44px);
+}
+
 .campaign-copy {
   position: relative;
   z-index: 1;
-  margin-bottom: 34px;
   padding: clamp(20px, 4vw, 34px);
   background:
     linear-gradient(135deg, rgba(10, 10, 12, 0.98), rgba(17, 14, 10, 0.92)),
@@ -555,33 +559,77 @@ figcaption {
 }
 
 .campaign-gallery figure {
-  min-height: 100%;
+  display: grid;
+  gap: 10px;
+  min-height: 0;
+  padding: 10px;
+  background: rgba(8, 8, 10, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: var(--radius);
 }
 
 .campaign-gallery figure img {
+  display: block;
+  width: 100%;
+  height: auto;
   aspect-ratio: 4 / 5;
   min-height: 0;
+  object-fit: cover;
+}
+
+.campaign-gallery figcaption {
+  min-height: 38px;
+  margin-top: 0;
+  line-height: 1.45;
+}
+
+.campaign-process-heading {
+  max-width: 860px;
+}
+
+.campaign-process-heading h3 {
+  margin-bottom: 0;
+  font-size: clamp(24px, 3vw, 38px);
 }
 
 .campaign-process {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 12px;
+  grid-template-columns: 1fr;
+  gap: 14px;
 }
 
 .campaign-process article {
-  padding: 20px;
+  display: grid;
+  grid-template-columns: 54px minmax(0, 1fr);
+  column-gap: 16px;
+  align-items: start;
+  padding: 18px;
+  background: rgba(13, 13, 16, 0.94);
 }
 
 .campaign-process span {
-  color: var(--red);
+  grid-row: 1 / span 2;
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  color: #f4d39a;
   font-size: 12px;
   font-weight: 900;
+  border: 1px solid rgba(244, 211, 154, 0.42);
+  border-radius: 50%;
+  background: rgba(244, 211, 154, 0.08);
 }
 
 .campaign-process h4 {
-  margin: 10px 0 8px;
+  grid-column: 2;
+  margin: 0 0 6px;
   font-size: 17px;
+}
+
+.campaign-process p {
+  grid-column: 2;
+  margin-bottom: 0;
 }
 
 .campaign-notes {
@@ -654,10 +702,6 @@ figcaption {
   .work-grid,
   .prompt-grid,
   .campaign-gallery {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .campaign-process {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
