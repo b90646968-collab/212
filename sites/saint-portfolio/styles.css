@@ -486,6 +486,31 @@ figcaption {
   border-top: 1px solid var(--line);
 }
 
+.campaign-copy {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 34px;
+  padding: clamp(20px, 4vw, 34px);
+  background:
+    linear-gradient(135deg, rgba(10, 10, 12, 0.98), rgba(17, 14, 10, 0.92)),
+    #0a0a0c;
+  border: 1px solid rgba(244, 211, 154, 0.24);
+  border-left: 4px solid rgba(244, 211, 154, 0.86);
+  border-radius: var(--radius);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.34);
+}
+
+.campaign-copy .section__heading {
+  margin-bottom: 22px;
+}
+
+.campaign-copy h2,
+.campaign-copy h3,
+.campaign-copy p,
+.campaign-copy li {
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.72);
+}
+
 .campaign-intro {
   max-width: 980px;
 }
