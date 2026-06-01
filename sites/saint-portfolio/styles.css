@@ -126,6 +126,18 @@ h1 {
   letter-spacing: 0;
 }
 
+.hero__title {
+  display: grid;
+  gap: 8px;
+  max-width: 980px;
+  font-size: clamp(44px, 8vw, 112px);
+  line-height: 0.94;
+}
+
+.hero__title span {
+  display: block;
+}
+
 h2 {
   margin-bottom: 0;
   font-size: clamp(30px, 5vw, 64px);
@@ -144,6 +156,27 @@ h3 {
   color: var(--silver);
   font-size: clamp(17px, 2vw, 22px);
   line-height: 1.6;
+}
+
+.hero__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.hero__meta span {
+  min-height: 34px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 11px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: var(--radius);
+  color: var(--silver);
+  background: rgba(5, 5, 6, 0.46);
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 
 .hero__actions {
@@ -214,7 +247,7 @@ h3 {
 .portfolio-part--veil::before {
   background-image:
     linear-gradient(90deg, rgba(8, 8, 9, 0.96), rgba(8, 8, 9, 0.48)),
-    url("./assets/veil-billboard.jpg");
+    url("./assets/veil-3d-product-concept.jpg");
 }
 
 .portfolio-part--saint::before {
@@ -323,8 +356,7 @@ h3 {
 .embed-panel,
 .process-list article,
 .prompt-grid article,
-.campaign-process article,
-.ad-storyline article {
+.campaign-process article {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--panel);
@@ -354,7 +386,7 @@ h3 {
 .campaign-intro p,
 .campaign-intro li,
 .campaign-process p,
-.ad-storyline p {
+.ad-summary p {
   color: var(--muted);
   line-height: 1.65;
 }
@@ -454,25 +486,79 @@ figcaption {
   align-items: center;
 }
 
-.ad-storyline {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 12px;
+.ad-summary {
+  max-width: 920px;
   margin-top: 18px;
+  padding: 18px 20px;
+  border: 1px solid rgba(244, 211, 154, 0.22);
+  border-radius: var(--radius);
+  background: rgba(12, 12, 14, 0.88);
 }
 
-.ad-storyline article {
-  padding: 20px;
+.ad-summary p {
+  margin-bottom: 0;
 }
 
-.ad-storyline span {
-  color: #e8b76a;
+.showcase-block {
+  display: grid;
+  gap: clamp(24px, 4vw, 40px);
+}
+
+.showcase-feature {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.7fr) minmax(280px, 0.9fr);
+  gap: clamp(22px, 4vw, 36px);
+  align-items: center;
+}
+
+.showcase-feature__media {
+  max-width: 540px;
+}
+
+.showcase-feature__media img {
+  aspect-ratio: 2 / 3;
+  min-height: 0;
+  object-fit: cover;
+}
+
+.showcase-feature__copy {
+  padding-bottom: 10px;
+}
+
+.showcase-feature__copy h3 {
+  font-size: clamp(26px, 4vw, 44px);
+}
+
+.showcase-feature__copy p:not(.campaign-kicker) {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.feature-specs {
+  display: grid;
+  gap: 12px;
+  margin: 24px 0 0;
+}
+
+.feature-specs div {
+  display: grid;
+  grid-template-columns: minmax(120px, 0.3fr) minmax(0, 1fr);
+  gap: 14px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.feature-specs dt {
+  color: #f4d39a;
   font-size: 12px;
   font-weight: 900;
+  text-transform: uppercase;
 }
 
-.ad-storyline h3 {
-  margin: 10px 0 8px;
+.feature-specs dd {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.55;
 }
 
 .campaign-part {
@@ -632,6 +718,62 @@ figcaption {
   margin-bottom: 0;
 }
 
+.process-note {
+  display: grid;
+  gap: 8px;
+  max-width: 980px;
+  padding: 18px 0 0;
+  border-top: 1px solid rgba(244, 211, 154, 0.24);
+}
+
+.process-note strong {
+  color: #f4d39a;
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.process-note p {
+  max-width: 760px;
+  margin-bottom: 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.process-gallery {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) repeat(3, minmax(0, 0.75fr));
+  gap: 14px;
+}
+
+.process-gallery figure {
+  display: grid;
+  gap: 10px;
+  min-width: 0;
+  padding: 10px;
+  background: rgba(8, 8, 10, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: var(--radius);
+}
+
+.process-gallery figure img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  min-height: 0;
+  object-fit: cover;
+}
+
+.process-gallery figure:first-child img,
+.process-gallery figure:last-child img {
+  aspect-ratio: 16 / 9;
+}
+
+.process-gallery figcaption {
+  min-height: 38px;
+  margin-top: 0;
+  line-height: 1.45;
+}
+
 .campaign-notes {
   padding: 10px 0;
 }
@@ -661,6 +803,10 @@ figcaption {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 12px;
   margin-bottom: 24px;
+}
+
+.prompt-grid--veil {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .prompt-grid article {
@@ -695,7 +841,8 @@ figcaption {
   .campaign-layout,
   .video-grid,
   .before-after,
-  .ad-storyline {
+  .showcase-feature,
+  .process-gallery {
     grid-template-columns: 1fr;
   }
 
@@ -735,8 +882,7 @@ figcaption {
   .work-grid,
   .prompt-grid,
   .process-list,
-  .campaign-process,
-  .ad-storyline {
+  .campaign-process {
     grid-template-columns: 1fr;
   }
 
@@ -746,6 +892,11 @@ figcaption {
 
   .campaign-gallery figure img {
     aspect-ratio: 4 / 5;
+  }
+
+  .feature-specs div {
+    grid-template-columns: 1fr;
+    gap: 6px;
   }
 
   figure img {

@@ -1,5 +1,5 @@
 const videoEmbeds = {
-  shortAd: "",
+  shortAd: "https://www.youtube.com/embed/9yM_QQ6rNAY",
   animeOpening: "https://www.youtube.com/embed/7fAf4xVB7rg",
 };
 
