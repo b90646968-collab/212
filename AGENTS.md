@@ -89,7 +89,7 @@ For image and video work:
 - Treat `sites/saint-portfolio/` as the canonical portfolio website.
 - When the user asks in Korean to "bring the portfolio web" (for example, `포트폴리오 웹 가져와`), serve and open this site unless the user names a different project.
 - If no local preview server is running, start a static server from `sites/saint-portfolio/` on an available localhost port and open the site root.
-- Prefer the latest cache-busted URL used by the site files; currently `?v=20260601b`.
+- Prefer the latest cache-busted URL used by the site files; currently `?v=20260601c`.
 
 ## Verification
 

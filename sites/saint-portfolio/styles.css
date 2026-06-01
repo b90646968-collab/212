@@ -256,6 +256,12 @@ h3 {
     url("./assets/twins.jpg");
 }
 
+.portfolio-part--musinsa::before {
+  background-image:
+    linear-gradient(90deg, rgba(8, 8, 9, 0.94), rgba(8, 8, 9, 0.54)),
+    url("./assets/musinsa-summer-black-friday-kv.png");
+}
+
 .part-shell {
   position: relative;
   z-index: 1;
@@ -301,6 +307,14 @@ h3 {
   font-size: clamp(15px, 2vw, 20px);
 }
 
+.brand-slogan--musinsa {
+  border-top-color: rgba(255, 84, 0, 0.42);
+}
+
+.brand-slogan--musinsa strong {
+  color: #ff5400;
+}
+
 .part-block {
   scroll-margin-top: 96px;
   padding: clamp(22px, 4vw, 46px);
@@ -318,6 +332,11 @@ h3 {
 .portfolio-part--saint .part-block {
   border-color: rgba(216, 214, 207, 0.2);
   background: rgba(11, 11, 14, 0.86);
+}
+
+.portfolio-part--musinsa .part-block {
+  border-color: rgba(255, 84, 0, 0.28);
+  background: rgba(9, 8, 7, 0.86);
 }
 
 .part-block .section__heading {
@@ -669,6 +688,70 @@ figcaption {
   line-height: 1.45;
 }
 
+.musinsa-kv-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
+  gap: clamp(22px, 4vw, 36px);
+  align-items: center;
+}
+
+.musinsa-kv-media img {
+  aspect-ratio: 16 / 9;
+  min-height: 0;
+  object-fit: cover;
+}
+
+.portfolio-part--musinsa .campaign-kicker,
+.portfolio-part--musinsa .eyebrow {
+  color: #ff5400;
+}
+
+.portfolio-part--musinsa .campaign-kicker {
+  border-color: rgba(255, 84, 0, 0.32);
+  background: rgba(255, 84, 0, 0.08);
+}
+
+.campaign-gallery--musinsa {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.campaign-gallery--musinsa figure {
+  background: rgba(8, 8, 8, 0.94);
+}
+
+.campaign-gallery--musinsa figure img {
+  aspect-ratio: 3 / 4;
+}
+
+.musinsa-kids-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.9fr repeat(2, 0.8fr);
+  gap: 14px;
+}
+
+.musinsa-kids-grid figure {
+  display: grid;
+  gap: 10px;
+  min-width: 0;
+  padding: 10px;
+  background: rgba(8, 8, 10, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: var(--radius);
+}
+
+.musinsa-kids-grid figure img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  min-height: 0;
+  object-fit: cover;
+}
+
+.musinsa-kids-grid figcaption {
+  min-height: 38px;
+  margin-top: 0;
+  line-height: 1.45;
+}
+
 .campaign-process-heading {
   max-width: 860px;
 }
@@ -809,6 +892,10 @@ figcaption {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
+.prompt-grid--musinsa {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .prompt-grid article {
   padding: 22px;
 }
@@ -839,16 +926,19 @@ figcaption {
 @media (max-width: 980px) {
   .intro,
   .campaign-layout,
+  .musinsa-kv-grid,
   .video-grid,
   .before-after,
   .showcase-feature,
-  .process-gallery {
+  .process-gallery,
+  .musinsa-kids-grid {
     grid-template-columns: 1fr;
   }
 
   .work-grid,
   .prompt-grid,
-  .campaign-gallery {
+  .campaign-gallery,
+  .campaign-gallery--musinsa {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -888,6 +978,10 @@ figcaption {
 
   .campaign-gallery {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .campaign-gallery--musinsa {
+    grid-template-columns: 1fr;
   }
 
   .campaign-gallery figure img {
