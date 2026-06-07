@@ -1,0 +1,166 @@
+SAINT - Prompt & Tools Archive
+
+Title: SAINT
+Project: Yura / Yuri anime opening portfolio
+Relationship: Twin sisters
+Work period: 7 days
+
+Core concept:
+SAINT is a dark fantasy anime opening project about the twin sisters Yura and Yuri.
+Yura enters a forbidden castle to find Yuri. The story begins like a rescue, but the final reveal suggests that the ritual has already succeeded.
+
+Tool credits:
+Tools used: CHAT GPT CODEX, SUPER GROK, POLLO AI, CAPCUT PRO
+Prompts and direction: CHAT GPT CODEX
+Images: SUPER GROK and POLLO AI
+Short video: SUPER GROK and POLLO AI
+Video editing: CAPCUT PRO
+
+Production process:
+1. Concept direction - define SAINT as a dark fantasy anime opening about twin sisters.
+2. Character definition - separate Yura as the active rescuer and Yuri as the ritual center.
+3. Prompt writing - create English prompts for characters, world, video, web layout, and negative control.
+4. Image production - generate character and story images with SUPER GROK and POLLO AI.
+5. Video production - generate short video material with SUPER GROK and POLLO AI.
+6. Editing and packaging - edit rhythm in CAPCUT PRO and assemble the portfolio website.
+
+Harnessing process:
+1. Use AI outputs as drafts, not final answers.
+2. Replace weak references and lock the final Yuri hairstyle reference.
+3. Keep the story signal consistent across image, video, and web presentation.
+4. Remove extra labels such as weapons, traits, attributes, and stat blocks.
+5. Curate only portfolio-ready images and clips.
+6. Document the full pipeline inside the final web package.
+
+Prompt 01 - Character Sheet Prompt
+Create a clean character profile sheet for the original fictional twin sisters Yura and Yuri.
+
+The sheet should look like a polished anime character design portfolio board, but with very limited text. Include only:
+- SAINT
+- YURA
+- YURI
+- TWIN SISTERS
+
+Do not include attributes, traits, weapons, statistics, item callouts, long descriptions, or explanatory labels. Use several portrait images, cropped face details, and one central twin-sister image. The layout should feel elegant, collectible, and portfolio-ready.
+
+Prompt 02 - Yura Prompt
+Yura is one of the twin sisters in SAINT. She has pale skin, muted red eyes, black twin-tail hair, a black choker, silver rings, and a cold direct gaze. Her expression should feel sharp, protective, and dangerous rather than cute or passive.
+
+Create a gothic anime editorial portrait of Yura with strong eye contact, dark styling, and a clean portfolio composition. She should look like the sister who steps into danger first. Use low-saturation black, silver, and blue-gray tones, with only small red accents in the eyes or lips.
+
+Prompt 03 - Yuri Prompt
+Yuri is Yura's twin sister and the emotional center of the ritual. Use the updated Yuri hair reference only: wet glossy black shoulder-length layered hair, a soft center part, loose strands around the forehead and cheeks, pale skin, muted red eyes, black choker, delicate drop earrings, and dark gothic couture.
+
+Her expression should feel calm, distant, and slightly emptied, as if she has returned from somewhere unreachable. Avoid the old curly updo hairstyle. Keep the image elegant, tragic, and quiet, with glass fragments, dark fabric, and silver highlights around her.
+
+Prompt 04 - World / Altar Prompt
+Create a ruined forbidden castle interior where reality touches another world. Include a massive doorway, dim red light, fog, old stone, black water reflections, angel-like statues, ritual candles, white flowers, and an altar.
+
+The space should feel sacred at first glance but wrong after a second look. The altar is not a place of healing. It is the proof that the ritual has already been completed.
+
+Prompt 05 - Opening Video Prompt
+Dark fantasy anime opening sequence for SAINT.
+
+Yura enters a forbidden castle to find her missing twin sister Yuri. The camera follows a sequence of omens: a black bird, a foggy cross, a dark corridor, a red moon through a doorway, Yuri's face covered by ritual shadow, and the altar where she lies.
+
+The video should begin like a rescue mission and slowly turn into dread. At the end, Yura seems to bring Yuri back, but the atmosphere suggests that Yuri's body has returned with something else inside. Use slow tracking shots, close-ups, red backlight, fog, reflective floors, and a final mood of quiet horror.
+
+Prompt 06 - Story Flow Board Prompt
+Create a four-panel story flow board for SAINT using cinematic stills from the opening video.
+
+Panel 01: OMEN - a black bird, a cross, fog, and the forbidden castle atmosphere.
+Panel 02: POSSESSION - Yuri's face partially covered by ritual shadow, glass, or dark texture.
+Panel 03: THRESHOLD - a doorway into another world, red moon, reflective floor, and a lone silhouette.
+Panel 04: ALTAR - the rescue scene on a dark ritual altar surrounded by flowers and candles.
+
+Use a clean sans-serif portfolio font, black background, thin white lines, red numbering, and a polished cinematic layout. The board should look like a final presentation image, not a rough storyboard.
+
+Prompt 07 - Web Portfolio Prompt
+Build a portfolio website for SAINT.
+
+The first screen should feel like an anime opening portfolio, not a generic landing page. Use a full-bleed dark hero image, the title SAINT, and a short line about twin sisters and a rescue that becomes a ritual.
+
+Include these sections:
+- Character profile sheet
+- Yura / Yuri portraits
+- Story flow board
+- Portfolio board
+- Working process
+- Harnessing process
+- Attached video
+- Prompt and tools credits
+- Detailed prompt archive
+
+Use a black, silver, fog-gray, and restrained red palette. Keep the page elegant, cinematic, and image-led.
+
+Prompt 08 - Tool Credit Copy
+Work period: 7 days.
+Prompt credit: The concept prompt and portfolio direction were created with CHAT GPT CODEX.
+Image credit: Images were made with SUPER GROK and POLLO AI.
+Short video credit: Short video was made with SUPER GROK and POLLO AI.
+Editing credit: Video editing was completed with CAPCUT PRO.
+Tools used: CHAT GPT CODEX, SUPER GROK, POLLO AI, CAPCUT PRO.
+
+Use this credit as a clean production note, not as a large explanation. It should support the portfolio without distracting from the artwork.
+
+Prompt 09 - Character Consistency Prompt
+Keep Yura and Yuri recognizable across every image.
+
+Yura:
+- black twin-tail hair
+- pale skin
+- muted red eyes
+- direct protective gaze
+- black gothic styling with silver details
+
+Yuri:
+- updated wet glossy black shoulder-length layered hair only
+- soft center part and loose strands over the forehead
+- pale skin
+- muted red eyes
+- distant ritual expression
+- black choker, delicate earrings, dark gothic couture
+
+Both characters should feel like twin sisters in the same world, but not identical copies. Keep their faces related, their mood connected, and their styling cinematic.
+
+Prompt 10 - Cinematic Still Prompt
+Create a cinematic still from the SAINT opening.
+
+The image should look like a paused frame from a dark anime opening sequence. Use a 16:9 composition, strong silhouette, fog, reflective stone floor, thin red backlight, and a cold black-silver color grade.
+
+The scene should not explain everything. It should suggest that Yura is approaching Yuri, but the castle, doorway, flowers, candles, and shadows are already reacting to a completed ritual.
+
+Prompt 11 - Portfolio Typography Prompt
+Design the portfolio typography for SAINT.
+
+Use an elegant title font for the main project name and a clean sans-serif display font for boards, process labels, story flow captions, and archive headings. The typography should feel sharp, editorial, and suitable for an animation portfolio.
+
+Avoid cute handwritten fonts, heavy fantasy fonts, neon gaming fonts, and overly decorative gothic fonts. The page should feel like a professional presentation, not a fan poster.
+
+Prompt 12 - Video Editing Prompt
+Edit the SAINT opening sequence with a slow build.
+
+Start with quiet omens and distant imagery. Move into closer shots of Yura, Yuri, the castle interior, the red doorway, and the ritual altar. Let the pacing become heavier near the end.
+
+The final impression should be: Yura reached Yuri, but the rescue came too late. Keep transitions dark, restrained, and cinematic. Do not make the edit feel like a cheerful music video.
+
+Prompt 13 - Final Portfolio Packaging Prompt
+Package the SAINT project as a portfolio-ready web page.
+
+The viewer should understand the project without reading a long explanation:
+1. SAINT is the title.
+2. Yura and Yuri are twin sisters.
+3. The story begins as a rescue.
+4. The ritual changes the meaning of the rescue.
+5. The project uses AI prompts, generated images, generated short video, and edited final video.
+
+Keep credits visible and honest:
+- Work period: 7 days
+- Tools used: CHAT GPT CODEX, SUPER GROK, POLLO AI, CAPCUT PRO
+- Prompts and direction: CHAT GPT CODEX
+- Images: SUPER GROK and POLLO AI
+- Short video: SUPER GROK and POLLO AI
+- Video editing: CAPCUT PRO
+
+Prompt 14 - Negative Prompt
+bright comedy mood, cute chibi style, modern romance background, cheerful idol photoshoot, exaggerated smile, weapon callouts, attribute labels, trait labels, stat blocks, excessive text, real person imitation, copying an existing character, brand logos, low quality, blurry face, malformed hands, plastic skin, cheap cosplay feeling, old Yuri curly updo hairstyle
