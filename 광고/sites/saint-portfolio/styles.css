@@ -335,25 +335,19 @@ h3 {
   display: grid;
   gap: 7px;
   padding: 15px;
-  border: 1px solid rgba(244, 211, 154, 0.22);
+  border: 1px solid rgba(244, 211, 154, 0.16);
   border-radius: var(--radius);
-  background:
-    linear-gradient(135deg, rgba(244, 211, 154, 0.08), rgba(8, 8, 9, 0.68)),
-    rgba(8, 8, 9, 0.72);
+  background: rgba(8, 8, 9, 0.64);
 }
 
 .portfolio-part--saint .harness-summary article {
-  border-color: rgba(216, 214, 207, 0.18);
-  background:
-    linear-gradient(135deg, rgba(216, 214, 207, 0.07), rgba(8, 8, 9, 0.72)),
-    rgba(8, 8, 9, 0.72);
+  border-color: rgba(216, 214, 207, 0.14);
+  background: rgba(8, 8, 9, 0.66);
 }
 
 .harness-summary--musinsa article {
-  border-color: rgba(255, 84, 0, 0.24);
-  background:
-    linear-gradient(135deg, rgba(255, 84, 0, 0.1), rgba(8, 8, 9, 0.72)),
-    rgba(8, 8, 9, 0.72);
+  border-color: rgba(255, 84, 0, 0.18);
+  background: rgba(8, 8, 9, 0.68);
 }
 
 .harness-summary span {
@@ -425,21 +419,21 @@ h3 {
   align-items: center;
   padding: 0 10px;
   color: var(--silver);
-  background: rgba(8, 8, 9, 0.64);
-  border: 1px solid rgba(244, 211, 154, 0.2);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: var(--radius);
   font-size: 12px;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .portfolio-part--saint .tool-stack__chips span {
-  border-color: rgba(216, 214, 207, 0.18);
+  border-color: rgba(216, 214, 207, 0.14);
 }
 
 .tool-stack--musinsa .tool-stack__chips span {
-  border-color: rgba(255, 84, 0, 0.26);
-  color: #ffd7c2;
-  background: rgba(255, 84, 0, 0.07);
+  border-color: rgba(255, 84, 0, 0.16);
+  color: var(--silver);
+  background: rgba(255, 255, 255, 0.04);
 }
 
 .credit-grid {
@@ -476,10 +470,8 @@ h3 {
 }
 
 .credit-grid--musinsa article {
-  border-color: rgba(255, 84, 0, 0.24);
-  background:
-    linear-gradient(135deg, rgba(255, 84, 0, 0.11), rgba(8, 8, 9, 0.74)),
-    rgba(8, 8, 9, 0.74);
+  border-color: rgba(255, 84, 0, 0.18);
+  background: rgba(8, 8, 9, 0.7);
 }
 
 .credit-grid--musinsa span {
@@ -489,10 +481,10 @@ h3 {
 .part-block {
   scroll-margin-top: 96px;
   padding: clamp(22px, 4vw, 46px);
-  background: rgba(9, 9, 11, 0.82);
-  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(9, 9, 11, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.13);
   border-radius: var(--radius);
-  backdrop-filter: blur(18px);
+  backdrop-filter: blur(10px);
 }
 
 .portfolio-part--veil .part-block {
@@ -506,8 +498,8 @@ h3 {
 }
 
 .portfolio-part--musinsa .part-block {
-  border-color: rgba(255, 84, 0, 0.28);
-  background: rgba(9, 8, 7, 0.86);
+  border-color: rgba(255, 84, 0, 0.2);
+  background: rgba(9, 8, 7, 0.82);
 }
 
 .part-block .section__heading {
@@ -1011,11 +1003,11 @@ figcaption {
 .prompt-label {
   width: max-content;
   margin: 0;
-  padding: 6px 10px;
+  padding: 0;
   color: #ff8a42;
-  background: rgba(255, 84, 0, 0.08);
-  border: 1px solid rgba(255, 84, 0, 0.32);
-  border-radius: var(--radius);
+  background: transparent;
+  border: 0;
+  border-radius: 0;
   font-size: 12px;
   font-weight: 900;
   text-transform: uppercase;
@@ -1030,10 +1022,8 @@ figcaption {
 .mini-prompt-grid article {
   min-width: 0;
   padding: 18px;
-  background:
-    linear-gradient(135deg, rgba(255, 84, 0, 0.1), rgba(9, 9, 11, 0.8)),
-    rgba(8, 8, 10, 0.94);
-  border: 1px solid rgba(255, 84, 0, 0.2);
+  background: rgba(8, 8, 10, 0.86);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: var(--radius);
 }
 
@@ -1066,10 +1056,8 @@ figcaption {
 .problem-solution-grid article {
   min-width: 0;
   padding: 18px;
-  background:
-    linear-gradient(135deg, rgba(255, 84, 0, 0.12), rgba(9, 9, 11, 0.82)),
-    rgba(8, 8, 10, 0.94);
-  border: 1px solid rgba(255, 84, 0, 0.22);
+  background: rgba(8, 8, 10, 0.86);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: var(--radius);
 }
 
@@ -1144,10 +1132,8 @@ figcaption {
   gap: 12px;
   margin-top: 20px;
   padding: 18px;
-  background:
-    linear-gradient(90deg, rgba(255, 84, 0, 0.11), rgba(255, 84, 0, 0.02)),
-    rgba(8, 8, 10, 0.94);
-  border: 1px solid rgba(255, 84, 0, 0.26);
+  background: rgba(8, 8, 10, 0.86);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: var(--radius);
 }
 
