@@ -992,6 +992,69 @@ figcaption {
   grid-column: 1 / -1;
 }
 
+.musinsa-frame-skill {
+  border-color: rgba(255, 84, 0, 0.22);
+}
+
+.frame-skill-gallery,
+.frame-sequence-grid {
+  display: grid;
+  gap: 14px;
+}
+
+.frame-skill-gallery {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.frame-sequence-block {
+  display: grid;
+  gap: 14px;
+  margin-top: clamp(22px, 4vw, 34px);
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 84, 0, 0.18);
+}
+
+.frame-sequence-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.frame-skill-gallery figure,
+.frame-sequence-grid figure {
+  display: grid;
+  gap: 10px;
+  min-width: 0;
+  margin: 0;
+  padding: 10px;
+  background: rgba(5, 5, 6, 0.96);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius);
+}
+
+.frame-skill-gallery img,
+.frame-sequence-grid img {
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  object-fit: contain;
+  background: #030303;
+}
+
+.frame-skill-gallery__wide {
+  grid-column: 1 / -1;
+}
+
+.frame-skill-gallery__wide img {
+  aspect-ratio: 12 / 1;
+  max-height: 170px;
+}
+
+.frame-skill-gallery figcaption,
+.frame-sequence-grid figcaption {
+  min-height: 36px;
+  margin-top: 0;
+  color: var(--silver);
+  line-height: 1.45;
+}
+
 .section-prompt-examples {
   display: grid;
   gap: 14px;
@@ -1332,13 +1395,14 @@ figcaption {
   .work-grid,
   .prompt-grid,
   .campaign-gallery,
-  .designer-gallery,
-  .storyboard-gallery,
-  .mini-prompt-grid,
-  .problem-solution-grid,
-  .harness-summary {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
+	  .designer-gallery,
+	  .storyboard-gallery,
+	  .mini-prompt-grid,
+	  .frame-sequence-grid,
+	  .problem-solution-grid,
+	  .harness-summary {
+	    grid-template-columns: repeat(2, minmax(0, 1fr));
+	  }
 
   .face-grid-gallery {
     grid-template-columns: 1fr;
@@ -1374,13 +1438,15 @@ figcaption {
   .work-grid,
   .prompt-grid,
   .process-list,
-  .campaign-process,
-  .mini-prompt-grid,
-  .problem-solution-grid,
-  .face-grid-gallery,
-  .harness-summary {
-    grid-template-columns: 1fr;
-  }
+	  .campaign-process,
+	  .mini-prompt-grid,
+	  .frame-skill-gallery,
+	  .frame-sequence-grid,
+	  .problem-solution-grid,
+	  .face-grid-gallery,
+	  .harness-summary {
+	    grid-template-columns: 1fr;
+	  }
 
   .campaign-gallery {
     grid-template-columns: repeat(2, minmax(0, 1fr));
