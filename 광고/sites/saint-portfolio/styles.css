@@ -91,12 +91,17 @@ nav a:hover {
   opacity: 0.82;
 }
 
+.hero--reel > img {
+  object-position: 52% center;
+  filter: saturate(0.92) contrast(1.08);
+}
+
 .hero__shade {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(8, 8, 9, 0.9), rgba(8, 8, 9, 0.56), rgba(8, 8, 9, 0.24)),
-    linear-gradient(0deg, rgba(8, 8, 9, 0.96), transparent 42%);
+    linear-gradient(90deg, rgba(8, 8, 9, 0.94), rgba(8, 8, 9, 0.66), rgba(8, 8, 9, 0.32)),
+    linear-gradient(0deg, rgba(8, 8, 9, 0.98), transparent 48%);
 }
 
 .hero__content {
@@ -317,6 +322,7 @@ h3 {
 }
 
 .selected-results,
+.harness-spotlight,
 .control-cards,
 .project-brief {
   display: grid;
@@ -354,9 +360,38 @@ h3 {
   text-align: center;
 }
 
+.harness-spotlight,
 .control-cards {
   grid-column: 1 / -1;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.harness-spotlight {
+  max-width: 860px;
+  margin-top: clamp(12px, 2.4vw, 24px);
+  padding-top: clamp(12px, 2vw, 20px);
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.harness-spotlight .eyebrow {
+  margin-bottom: 8px;
+}
+
+.harness-spotlight h2 {
+  max-width: 760px;
+  font-size: clamp(24px, 3vw, 40px);
+  line-height: 1.08;
+}
+
+.harness-spotlight p {
+  max-width: 760px;
+  margin-bottom: 0;
+  color: var(--silver);
+  font-size: clamp(14px, 1.4vw, 17px);
+  line-height: 1.55;
+}
+
+.control-cards {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .control-cards article,
@@ -368,6 +403,13 @@ h3 {
   border: 1px solid rgba(255, 255, 255, 0.14);
   border-radius: var(--radius);
   background: rgba(8, 8, 10, 0.78);
+}
+
+.control-cards article {
+  border-top-color: rgba(179, 38, 44, 0.72);
+  background:
+    linear-gradient(180deg, rgba(179, 38, 44, 0.16), rgba(8, 8, 10, 0.82) 42%),
+    rgba(8, 8, 10, 0.82);
 }
 
 .control-cards strong,
