@@ -3,6 +3,7 @@ const videoEmbeds = {
   shortAd: "https://www.youtube.com/embed/9yM_QQ6rNAY",
   animeOpening: "https://www.youtube.com/embed/7fAf4xVB7rg",
   musinsaDiversityFilm: "https://www.youtube.com/embed/70blJ_6wh6s",
+  otherShortFilm: "https://www.youtube.com/embed/P3GLV_5TIAU",
 };
 
 const videoTitles = {
@@ -10,6 +11,7 @@ const videoTitles = {
   shortAd: "AI short-form ad video",
   animeOpening: "AI anime opening video",
   musinsaDiversityFilm: "편견을 벗다, 다양성을 입다, 무진장을 만나다.",
+  otherShortFilm: "Other AI short-form video",
 };
 
 function scrollToHashTarget() {

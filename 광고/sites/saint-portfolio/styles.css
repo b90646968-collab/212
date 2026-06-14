@@ -30,7 +30,8 @@ body {
 }
 
 img,
-iframe {
+iframe,
+video {
   display: block;
   max-width: 100%;
 }
@@ -245,6 +246,11 @@ h3 {
   color: var(--text);
   font-size: clamp(18px, 2vw, 24px);
   line-height: 1.25;
+  overflow-wrap: anywhere;
+}
+
+.hero__role strong:not(:first-of-type) {
+  font-size: clamp(15px, 1.5vw, 18px);
 }
 
 .hero__meta {
@@ -266,6 +272,11 @@ h3 {
   font-size: 12px;
   font-weight: 800;
   text-transform: uppercase;
+}
+
+.hero__meta--roles {
+  max-width: 760px;
+  margin-bottom: 4px;
 }
 
 .hero__actions {
@@ -322,6 +333,7 @@ h3 {
 }
 
 .selected-results,
+.ad-review-feature,
 .harness-spotlight,
 .control-cards,
 .project-brief {
@@ -357,6 +369,157 @@ h3 {
   color: var(--silver);
   font-size: 13px;
   font-weight: 700;
+  text-align: center;
+}
+
+.ad-review-feature {
+  grid-column: 1 / -1;
+  grid-template-columns: minmax(260px, 420px) minmax(0, 1fr);
+  grid-template-areas:
+    "video copy"
+    "video reference"
+    "gallery gallery";
+  align-items: start;
+  gap: clamp(16px, 3vw, 30px);
+  margin-top: clamp(18px, 3vw, 34px);
+  padding: clamp(14px, 2.4vw, 24px);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(135deg, rgba(179, 38, 44, 0.22), rgba(8, 8, 10, 0.2) 42%),
+    rgba(6, 6, 8, 0.84);
+}
+
+.ad-review-video {
+  grid-area: video;
+  align-self: start;
+  width: min(100%, 420px);
+  justify-self: center;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: var(--radius);
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.ad-review-video iframe {
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  border: 0;
+  border-radius: calc(var(--radius) - 2px);
+  background: #030303;
+}
+
+.ad-review-copy {
+  grid-area: copy;
+  display: grid;
+  align-content: start;
+  gap: 14px;
+  min-width: 0;
+}
+
+.ad-review-copy h2 {
+  font-size: clamp(28px, 4vw, 54px);
+}
+
+.ad-review-copy p:not(.eyebrow) {
+  max-width: 780px;
+  margin-bottom: 0;
+  color: var(--silver);
+  font-size: clamp(15px, 1.5vw, 18px);
+  line-height: 1.7;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.ad-review-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.ad-review-tags span {
+  min-height: 34px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 11px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: var(--radius);
+  color: var(--silver);
+  background: rgba(5, 5, 6, 0.54);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.ad-review-reference {
+  grid-area: reference;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(120px, 180px);
+  gap: 16px;
+  align-items: center;
+  padding: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: var(--radius);
+  background: rgba(5, 5, 6, 0.62);
+}
+
+.ad-review-reference h3 {
+  margin-bottom: 8px;
+  font-size: clamp(18px, 2vw, 26px);
+}
+
+.ad-review-reference p:not(.eyebrow) {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.ad-review-reference video {
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  max-height: 250px;
+  object-fit: contain;
+  border-radius: calc(var(--radius) - 2px);
+  background: #030303;
+}
+
+.ad-review-gallery {
+  grid-area: gallery;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.ad-review-gallery figure {
+  min-width: 0;
+  margin: 0;
+  padding: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius);
+  background: rgba(5, 5, 6, 0.62);
+}
+
+.ad-review-gallery img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  min-height: 0;
+  object-fit: cover;
+  border-radius: calc(var(--radius) - 2px);
+}
+
+.ad-review-gallery figure:nth-last-child(-n + 2) img {
+  aspect-ratio: 4 / 5;
+  object-fit: contain;
+  background: #030303;
+}
+
+.ad-review-gallery figcaption {
+  min-height: 34px;
+  margin-top: 8px;
+  color: var(--silver);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.35;
   text-align: center;
 }
 
@@ -478,6 +641,12 @@ h3 {
     url("./assets/musinsa-summer-black-friday-kv.png");
 }
 
+.portfolio-part--other::before {
+  background-image:
+    linear-gradient(90deg, rgba(8, 8, 9, 0.92), rgba(8, 8, 9, 0.42)),
+    url("./assets/other-works/romantic-garden-04.png");
+}
+
 .part-shell {
   position: relative;
   z-index: 1;
@@ -542,7 +711,7 @@ h3 {
 .project-brief {
   width: 100%;
   max-width: 1120px;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   margin: 22px auto 0;
 }
 
@@ -557,6 +726,14 @@ h3 {
 
 .project-brief--musinsa span {
   color: #ff8a42;
+}
+
+.project-brief--other article {
+  border-color: rgba(232, 183, 106, 0.18);
+}
+
+.project-brief--other span {
+  color: #e8b76a;
 }
 
 .harness-summary {
@@ -1131,10 +1308,23 @@ figcaption {
   margin: 0 auto;
 }
 
+.other-video-layout {
+  width: 100%;
+  display: grid;
+  grid-template-columns: minmax(240px, 420px) minmax(0, 1fr);
+  gap: clamp(24px, 4vw, 44px);
+  align-items: center;
+  margin: 0 auto;
+}
+
 .embed-panel--shorts {
   padding: 12px;
   background: rgba(5, 5, 6, 0.92);
   border-color: rgba(255, 84, 0, 0.24);
+}
+
+.embed-panel--other {
+  border-color: rgba(232, 183, 106, 0.24);
 }
 
 .campaign-film-copy {
@@ -1178,6 +1368,70 @@ figcaption {
 .portfolio-part--musinsa .campaign-kicker {
   border-color: rgba(255, 84, 0, 0.32);
   background: rgba(255, 84, 0, 0.08);
+}
+
+.portfolio-part--other .eyebrow,
+.portfolio-part--other .campaign-kicker {
+  color: #e8b76a;
+}
+
+.portfolio-part--other .campaign-kicker {
+  border-color: rgba(232, 183, 106, 0.32);
+  background: rgba(232, 183, 106, 0.08);
+}
+
+.other-work-gallery {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  margin: 0 auto;
+}
+
+.other-work-gallery figure {
+  min-width: 0;
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 10px;
+  border: 1px solid rgba(232, 183, 106, 0.16);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(180deg, rgba(232, 183, 106, 0.1), transparent 52%),
+    rgba(5, 5, 6, 0.92);
+}
+
+.other-work-gallery img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  min-height: 0;
+  object-fit: cover;
+  border-radius: calc(var(--radius) - 2px);
+  background: #030303;
+}
+
+.other-work-gallery figcaption {
+  display: grid;
+  gap: 5px;
+  color: var(--silver);
+  font-size: 12px;
+  line-height: 1.38;
+  overflow-wrap: anywhere;
+}
+
+.other-work-gallery figcaption span {
+  color: #e8b76a;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.other-work-gallery figcaption p {
+  margin: 0;
+}
+
+.other-work-gallery figcaption strong {
+  color: var(--text);
+  font-weight: 850;
 }
 
 .designer-gallery {
@@ -1649,6 +1903,27 @@ figcaption {
   font-weight: 700;
 }
 
+.work-credit {
+  display: grid;
+  gap: 6px;
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.work-credit p {
+  margin: 0;
+  color: var(--silver);
+  font-size: 13px;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
+.work-credit strong {
+  color: var(--text);
+  font-weight: 850;
+}
+
 .contact-section {
   padding: clamp(70px, 10vw, 120px) clamp(20px, 5vw, 72px);
   background:
@@ -1707,11 +1982,13 @@ figcaption {
   .intro,
   .campaign-layout,
   .musinsa-film-layout,
+  .other-video-layout,
   .musinsa-kv-grid,
   .video-grid,
   .before-after,
   .showcase-feature,
   .process-gallery,
+  .ad-review-feature,
   .credit-grid {
     grid-template-columns: 1fr;
   }
@@ -1728,6 +2005,8 @@ figcaption {
     .project-brief,
     .hero-projects,
     .selected-results,
+    .ad-review-gallery,
+    .other-work-gallery,
     .control-cards {
 	    grid-template-columns: repeat(2, minmax(0, 1fr));
 	  }
@@ -1735,6 +2014,14 @@ figcaption {
   .hero__copyblock,
   .hero-reel {
     justify-self: center;
+  }
+
+  .ad-review-feature {
+    grid-template-areas:
+      "video"
+      "copy"
+      "reference"
+      "gallery";
   }
 
   .face-grid-gallery {
@@ -1782,9 +2069,20 @@ figcaption {
     .project-brief,
     .hero-projects,
     .selected-results,
+    .ad-review-gallery,
+    .other-work-gallery,
     .control-cards {
 	    grid-template-columns: 1fr;
 	  }
+
+  .ad-review-video {
+    grid-row: auto;
+    width: min(100%, 360px);
+  }
+
+  .ad-review-reference {
+    grid-template-columns: 1fr;
+  }
 
   .hero-reel {
     width: min(100%, 360px);
