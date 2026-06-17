@@ -1,4 +1,0 @@
-interface:
-  display_name: "Texture Prompt Index"
-  short_description: "Find and reuse texture prompt notes."
-  default_prompt: "Use $texture-prompt-index to find the texture prompt in prompts/ and turn it into a reusable image prompt from test-h01_texture.md."

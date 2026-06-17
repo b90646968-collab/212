@@ -1,4 +1,0 @@
-interface:
-  display_name: "Media Generation Brief"
-  short_description: "Draft reusable media prompts."
-  default_prompt: "Use $media-generation-brief to turn this idea into reusable image or video generation prompts and production notes."

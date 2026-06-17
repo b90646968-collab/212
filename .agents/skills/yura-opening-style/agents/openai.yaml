@@ -1,4 +1,0 @@
-interface:
-  display_name: "Yura Opening Style"
-  short_description: "Create characters in Yura painterly anime opening style"
-  default_prompt: "Create a character prompt in the Yura opening style."
