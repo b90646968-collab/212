@@ -999,7 +999,7 @@ main,
 }
 
 .project-header h2 {
-  font-size: clamp(42px, 6vw, 78px);
+  font-size: clamp(32px, 4.5vw, 58px);
 }
 
 .project-lead {
