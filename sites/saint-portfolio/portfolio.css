@@ -1035,6 +1035,36 @@ main,
   background: #050507;
 }
 
+.project-media {
+  display: grid;
+  gap: 12px;
+}
+
+.project-media--portrait-split {
+  grid-template-columns: minmax(250px, 0.38fr) minmax(0, 0.62fr);
+  align-items: center;
+}
+
+.project-media--stack {
+  grid-template-columns: 1fr;
+}
+
+.project-video {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #030303;
+}
+
+.project-video--portrait {
+  width: min(100%, 420px);
+  justify-self: center;
+}
+
+.project-video--wide {
+  width: 100%;
+}
+
 .project-cover img {
   width: 100%;
   max-height: 820px;
@@ -1043,6 +1073,10 @@ main,
 
 .project-cover--contain img {
   object-fit: contain;
+}
+
+.project-cover--natural img {
+  max-height: none;
 }
 
 .project-cover figcaption,
@@ -1319,6 +1353,20 @@ main,
   align-items: start;
 }
 
+.case-media--portrait-review {
+  grid-template-columns: minmax(260px, 0.42fr) minmax(0, 0.58fr);
+}
+
+.case-media--portrait-feature {
+  grid-template-columns: minmax(0, 0.62fr) minmax(260px, 0.38fr);
+  align-items: center;
+}
+
+.case-media--portrait-review > .video-frame {
+  width: min(100%, 420px);
+  justify-self: center;
+}
+
 .video-card--local video {
   display: block;
   width: 100%;
@@ -1343,7 +1391,8 @@ main,
 }
 
 .video-frame--wide {
-  max-width: 960px;
+  width: 100%;
+  max-width: none;
   border: 1px solid var(--line);
   border-radius: 18px;
 }
@@ -1422,6 +1471,10 @@ main,
   .detail-index,
   .process-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .project-media--portrait-split {
+    grid-template-columns: 1fr;
   }
 
   .pipeline-details {
