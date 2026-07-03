@@ -206,7 +206,7 @@ main,
 
 .home-hero__copy h1 {
   max-width: 670px;
-  font-size: clamp(42px, 5.4vw, 76px);
+  font-size: clamp(34px, 4.4vw, 58px);
   font-weight: 900;
   line-height: 0.97;
 }
@@ -347,7 +347,7 @@ main,
 }
 
 .section-heading h2 {
-  font-size: clamp(36px, 5vw, 64px);
+  font-size: clamp(28px, 3.6vw, 46px);
 }
 
 .section-heading--split > p {
@@ -533,8 +533,19 @@ main,
 }
 
 .project-feature h3 {
-  font-size: clamp(34px, 4.6vw, 62px);
+  font-size: clamp(28px, 3.6vw, 48px);
   line-height: 1.02;
+}
+
+.assignment-media {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: 10px;
+}
+
+.assignment-media .project-feature__media--portrait {
+  width: 100%;
 }
 
 .feature-lead {
@@ -671,7 +682,7 @@ main,
 .about-panel h2,
 .contact-panel h2,
 .detail-contact h2 {
-  font-size: clamp(34px, 5vw, 64px);
+  font-size: clamp(28px, 3.6vw, 46px);
 }
 
 .about-panel__copy p,
@@ -719,7 +730,7 @@ main,
 
 .detail-intro h1 {
   max-width: 1040px;
-  font-size: clamp(38px, 5vw, 68px);
+  font-size: clamp(32px, 4.2vw, 54px);
   font-weight: 900;
   line-height: 0.98;
 }
@@ -999,7 +1010,7 @@ main,
 }
 
 .project-header h2 {
-  font-size: clamp(32px, 4.5vw, 58px);
+  font-size: clamp(28px, 3.6vw, 48px);
 }
 
 .project-lead {
@@ -1326,6 +1337,14 @@ main,
   border-top: 1px solid var(--line);
 }
 
+.assignment-cases {
+  display: grid;
+}
+
+.assignment-cases .case-study:first-child {
+  margin-top: 0;
+}
+
 .case-study--compact {
   max-width: 900px;
 }
@@ -1337,7 +1356,7 @@ main,
 
 .case-study__heading h3 {
   margin-top: 8px;
-  font-size: clamp(28px, 4vw, 48px);
+  font-size: clamp(24px, 3vw, 38px);
 }
 
 .case-study__heading p {
@@ -1395,6 +1414,11 @@ main,
   max-width: none;
   border: 1px solid var(--line);
   border-radius: 18px;
+}
+
+.image-works-video {
+  width: min(100%, 420px);
+  margin-inline: auto;
 }
 
 .mini-gallery {
@@ -1546,7 +1570,7 @@ main,
 
   .home-hero__copy h1,
   .detail-intro h1 {
-    font-size: clamp(36px, 10.5vw, 50px);
+    font-size: clamp(30px, 8.5vw, 42px);
   }
 
   .hero-facts {
@@ -1575,7 +1599,7 @@ main,
   }
 
   .project-feature h3 {
-    font-size: clamp(34px, 10vw, 48px);
+    font-size: clamp(28px, 8vw, 38px);
   }
 
   .feature-notes div {
