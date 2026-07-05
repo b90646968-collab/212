@@ -276,6 +276,12 @@ main,
   --accent: var(--orange);
 }
 
+.hero-film--aeroflex,
+.project-feature--aeroflex,
+.detail-project--aeroflex {
+  --accent: #83add2;
+}
+
 .hero-film--portrait {
   width: min(100%, 430px);
   justify-self: center;
@@ -745,7 +751,7 @@ main,
 
 .detail-index {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 10px;
   margin-top: 44px;
 }
@@ -921,7 +927,7 @@ main,
 
 .pipeline-examples > div {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 10px;
 }
 
@@ -983,6 +989,10 @@ main,
 
 .detail-project--orange {
   --accent: var(--orange);
+}
+
+.detail-project--aeroflex::before {
+  background: linear-gradient(180deg, rgba(80, 125, 166, 0.2), transparent);
 }
 
 .detail-project--orange::before {
@@ -1184,6 +1194,70 @@ main,
 
 .media-grid--mood img {
   aspect-ratio: 3 / 4;
+}
+
+.aeroflex-film-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.aeroflex-video-card {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: #08090b;
+}
+
+.aeroflex-video-card video {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  background: #030303;
+  object-fit: contain;
+}
+
+.aeroflex-video-card figcaption,
+.aeroflex-gallery figcaption {
+  display: block;
+  padding: 11px 13px 13px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+.aeroflex-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.aeroflex-gallery figure {
+  min-width: 0;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: #08090b;
+}
+
+.aeroflex-gallery img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #f0f0f0;
+  object-fit: contain;
+}
+
+.aeroflex-gallery__board {
+  grid-column: 1 / -1;
+}
+
+.aeroflex-gallery__board img {
+  aspect-ratio: auto;
 }
 
 .musinsa-archive-section {
@@ -1460,6 +1534,10 @@ main,
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .pipeline-examples > div {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .pipeline-flow article {
     min-height: 210px;
   }
@@ -1589,8 +1667,14 @@ main,
   .project-story,
   .media-grid--three,
   .media-grid--four,
-  .case-media--split {
+  .case-media--split,
+  .aeroflex-film-grid,
+  .aeroflex-gallery {
     grid-template-columns: 1fr;
+  }
+
+  .aeroflex-gallery__board {
+    grid-column: auto;
   }
 
   .project-feature {
