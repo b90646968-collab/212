@@ -282,6 +282,11 @@ main,
   --accent: #83add2;
 }
 
+.project-feature--lumora,
+.detail-project--lumora {
+  --accent: #e8b4aa;
+}
+
 .hero-film--portrait {
   width: min(100%, 430px);
   justify-self: center;
@@ -751,7 +756,7 @@ main,
 
 .detail-index {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: 10px;
   margin-top: 44px;
 }
@@ -927,7 +932,7 @@ main,
 
 .pipeline-examples > div {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 10px;
 }
 
@@ -993,6 +998,12 @@ main,
 
 .detail-project--aeroflex::before {
   background: linear-gradient(180deg, rgba(80, 125, 166, 0.2), transparent);
+}
+
+.detail-project--lumora::before {
+  background:
+    radial-gradient(circle at 18% 0%, rgba(232, 180, 170, 0.24), transparent 34%),
+    linear-gradient(180deg, rgba(187, 139, 95, 0.14), transparent);
 }
 
 .detail-project--orange::before {
@@ -1258,6 +1269,55 @@ main,
 
 .aeroflex-gallery__board img {
   aspect-ratio: auto;
+}
+
+.lumora-film {
+  width: min(100%, 860px);
+  margin: 0 auto;
+  overflow: hidden;
+  border: 1px solid rgba(232, 180, 170, 0.28);
+  border-radius: var(--radius);
+  background: #08080a;
+  box-shadow: 0 34px 90px rgba(0, 0, 0, 0.34);
+}
+
+.lumora-film video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #050506;
+  object-fit: cover;
+}
+
+.lumora-film figcaption,
+.lumora-gallery figcaption {
+  display: block;
+  padding: 11px 13px 13px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+.lumora-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.lumora-gallery figure {
+  min-width: 0;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid rgba(232, 180, 170, 0.2);
+  border-radius: 16px;
+  background: #0a090a;
+}
+
+.lumora-gallery img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
 }
 
 .musinsa-archive-section {
@@ -1669,7 +1729,8 @@ main,
   .media-grid--four,
   .case-media--split,
   .aeroflex-film-grid,
-  .aeroflex-gallery {
+  .aeroflex-gallery,
+  .lumora-gallery {
     grid-template-columns: 1fr;
   }
 
