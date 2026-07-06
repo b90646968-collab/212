@@ -22,15 +22,18 @@ function scrollToHashTarget() {
   const target = document.getElementById(window.location.hash.slice(1));
   if (!target) return;
 
-  window.setTimeout(() => {
+  const alignTarget = () => {
     const previousBehavior = document.documentElement.style.scrollBehavior;
-    const headerOffset = document.querySelector(".topbar")?.offsetHeight || 0;
+    const headerOffset = document.querySelector(".site-header")?.offsetHeight || 0;
     const targetTop = target.getBoundingClientRect().top + window.scrollY - headerOffset - 24;
 
     document.documentElement.style.scrollBehavior = "auto";
     window.scrollTo({ top: Math.max(targetTop, 0), behavior: "auto" });
     document.documentElement.style.scrollBehavior = previousBehavior;
-  }, 80);
+  };
+
+  window.setTimeout(alignTarget, 80);
+  window.setTimeout(alignTarget, 500);
 }
 
 for (const frame of document.querySelectorAll("[data-embed-key]")) {
