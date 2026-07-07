@@ -206,9 +206,9 @@ main,
 
 .home-hero__copy h1 {
   max-width: 670px;
-  font-size: clamp(34px, 4.4vw, 58px);
+  font-size: clamp(28px, 3.3vw, 44px);
   font-weight: 900;
-  line-height: 0.97;
+  line-height: 1;
 }
 
 .hero-summary {
@@ -358,7 +358,7 @@ main,
 }
 
 .section-heading h2 {
-  font-size: clamp(28px, 3.6vw, 46px);
+  font-size: clamp(24px, 3vw, 38px);
 }
 
 .section-heading--split > p {
@@ -544,8 +544,8 @@ main,
 }
 
 .project-feature h3 {
-  font-size: clamp(28px, 3.6vw, 48px);
-  line-height: 1.02;
+  font-size: clamp(24px, 3vw, 38px);
+  line-height: 1.06;
 }
 
 .assignment-media {
@@ -693,7 +693,7 @@ main,
 .about-panel h2,
 .contact-panel h2,
 .detail-contact h2 {
-  font-size: clamp(28px, 3.6vw, 46px);
+  font-size: clamp(24px, 3vw, 38px);
 }
 
 .about-panel__copy p,
@@ -741,9 +741,9 @@ main,
 
 .detail-intro h1 {
   max-width: 1040px;
-  font-size: clamp(32px, 4.2vw, 54px);
+  font-size: clamp(26px, 3vw, 40px);
   font-weight: 900;
-  line-height: 0.98;
+  line-height: 1.04;
 }
 
 .detail-intro > p:not(.eyebrow) {
@@ -954,7 +954,7 @@ main,
 }
 
 .pipeline-examples h3 {
-  font-size: clamp(28px, 4vw, 46px);
+  font-size: clamp(23px, 3vw, 36px);
 }
 
 .pipeline-examples > div {
@@ -1058,7 +1058,7 @@ main,
 }
 
 .project-header h2 {
-  font-size: clamp(28px, 3.6vw, 48px);
+  font-size: clamp(24px, 3vw, 38px);
 }
 
 .project-lead {
@@ -1234,6 +1234,90 @@ main,
   aspect-ratio: 3 / 4;
 }
 
+.sns-reaction-section {
+  margin-top: clamp(46px, 7vw, 84px);
+  padding-top: clamp(34px, 5vw, 56px);
+  border-top: 1px solid var(--line);
+}
+
+.sns-reaction-header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 0.62fr);
+  gap: 26px;
+  align-items: end;
+  margin-bottom: 18px;
+}
+
+.sns-reaction-header h3 {
+  margin-top: 8px;
+  font-size: clamp(23px, 3vw, 36px);
+  line-height: 1.08;
+}
+
+.sns-reaction-header p:not(.eyebrow) {
+  max-width: 720px;
+  margin: 14px 0 0;
+  color: var(--silver);
+  line-height: 1.75;
+}
+
+.sns-reaction-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.sns-reaction-metrics span {
+  display: grid;
+  gap: 4px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.045);
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.sns-reaction-metrics strong {
+  color: var(--text);
+  font-size: 20px;
+  line-height: 1;
+}
+
+.sns-reaction-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.sns-reaction-gallery figure {
+  min-width: 0;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: #f5f5f2;
+}
+
+.sns-reaction-gallery figure.sns-reaction-gallery__wide {
+  grid-column: 1 / -1;
+}
+
+.sns-reaction-gallery img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.sns-reaction-gallery figcaption {
+  padding: 12px 14px 14px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  background: rgba(8, 9, 11, 0.92);
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.55;
+}
+
 .aeroflex-film-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1359,7 +1443,7 @@ main,
 }
 
 .archive-heading h3 {
-  font-size: clamp(28px, 4vw, 48px);
+  font-size: clamp(23px, 3vw, 36px);
 }
 
 .archive-heading > p:last-child {
@@ -1517,7 +1601,7 @@ main,
 
 .case-study__heading h3 {
   margin-top: 8px;
-  font-size: clamp(24px, 3vw, 38px);
+  font-size: clamp(22px, 2.6vw, 32px);
 }
 
 .case-study__heading p {
@@ -1735,7 +1819,7 @@ main,
 
   .home-hero__copy h1,
   .detail-intro h1 {
-    font-size: clamp(30px, 8.5vw, 42px);
+    font-size: clamp(27px, 7.4vw, 36px);
   }
 
   .hero-facts {
@@ -1754,10 +1838,16 @@ main,
   .project-story,
   .media-grid--three,
   .media-grid--four,
-  .case-media--split,
-  .aeroflex-film-grid,
-  .aeroflex-gallery,
-  .lumora-gallery {
+    .case-media--split,
+    .aeroflex-film-grid,
+    .aeroflex-gallery,
+    .lumora-gallery,
+    .sns-reaction-header,
+    .sns-reaction-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .sns-reaction-metrics {
     grid-template-columns: 1fr;
   }
 
@@ -1771,7 +1861,7 @@ main,
   }
 
   .project-feature h3 {
-    font-size: clamp(28px, 8vw, 38px);
+    font-size: clamp(24px, 7vw, 32px);
   }
 
   .feature-notes div {
