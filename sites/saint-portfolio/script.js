@@ -8,12 +8,12 @@ const videoEmbeds = {
 };
 
 const videoTitles = {
-  portfolioReel: "AI Commercial / Fashion / Character Reel",
-  shortAd: "AI short-form ad video",
-  animeOpening: "AI anime opening video",
+  portfolioReel: "Commercial / Fashion / Character Reel",
+  shortAd: "Short-form ad video",
+  animeOpening: "Character opening video",
   musinsaDiversityFilm: "편견을 벗다, 다양성을 입다, 무진장을 만나다.",
-  aiResumeProfileFilm: "AI 이력서 프로필 사진 앱 광고",
-  otherShortFilm: "Other AI short-form video",
+  aiResumeProfileFilm: "이력서 프로필 사진 앱 광고",
+  otherShortFilm: "Other short-form video",
 };
 
 function scrollToHashTarget() {
@@ -72,7 +72,7 @@ for (const frame of document.querySelectorAll("[data-embed-key]")) {
 
   const iframe = document.createElement("iframe");
   iframe.src = url;
-  iframe.title = videoTitles[key] || "AI portfolio video";
+  iframe.title = videoTitles[key] || "portfolio video";
   iframe.allow =
     "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
   iframe.allowFullscreen = true;
