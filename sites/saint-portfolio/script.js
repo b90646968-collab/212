@@ -36,6 +36,34 @@ function scrollToHashTarget() {
   window.setTimeout(alignTarget, 500);
 }
 
+function syncDetailParts() {
+  if (!document.body.classList.contains("detail-page")) return;
+
+  const detailPanels = Array.from(document.querySelectorAll(".process-overview[id], .detail-project[id]"));
+  const hashId = window.location.hash.slice(1);
+  const activePanel = detailPanels.find((panel) => panel.id === hashId);
+  const modeClasses = ["detail-hub-view", "detail-part-view", "detail-process-view"];
+
+  document.body.classList.remove(...modeClasses);
+  detailPanels.forEach((panel) => panel.classList.remove("is-active-detail"));
+  document
+    .querySelectorAll(".detail-index a, .detail-nav a")
+    .forEach((link) => link.classList.remove("is-active-detail-link"));
+
+  if (!activePanel) {
+    document.body.classList.add("detail-hub-view");
+    return;
+  }
+
+  const isProcessPanel = activePanel.classList.contains("process-overview");
+  document.body.classList.add(isProcessPanel ? "detail-process-view" : "detail-part-view");
+  activePanel.classList.add("is-active-detail");
+
+  document
+    .querySelectorAll(`.detail-index a[href="#${activePanel.id}"], .detail-nav a[href="#${activePanel.id}"]`)
+    .forEach((link) => link.classList.add("is-active-detail-link"));
+}
+
 for (const frame of document.querySelectorAll("[data-embed-key]")) {
   const key = frame.dataset.embedKey;
   const url = videoEmbeds[key];
@@ -59,5 +87,14 @@ document.querySelectorAll("img").forEach((img, index) => {
   }
 });
 
-window.addEventListener("load", scrollToHashTarget);
-window.addEventListener("hashchange", scrollToHashTarget);
+syncDetailParts();
+
+window.addEventListener("load", () => {
+  syncDetailParts();
+  scrollToHashTarget();
+});
+
+window.addEventListener("hashchange", () => {
+  syncDetailParts();
+  scrollToHashTarget();
+});

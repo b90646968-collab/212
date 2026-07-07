@@ -776,6 +776,14 @@ main,
   border-color: rgba(196, 58, 66, 0.55);
 }
 
+.detail-index a.is-active-detail-link {
+  transform: translateY(-3px);
+  border-color: rgba(196, 58, 66, 0.82);
+  background:
+    linear-gradient(135deg, rgba(196, 58, 66, 0.22), rgba(255, 255, 255, 0.04)),
+    rgba(17, 18, 22, 0.82);
+}
+
 .detail-index span {
   color: var(--accent);
   font-size: 11px;
@@ -790,6 +798,25 @@ main,
   color: var(--muted);
   font-size: 11px;
   font-style: normal;
+}
+
+.detail-nav a.is-active-detail-link {
+  color: var(--text);
+}
+
+.detail-page.detail-hub-view .detail-project,
+.detail-page.detail-part-view .process-overview,
+.detail-page.detail-part-view .detail-project,
+.detail-page.detail-process-view .detail-project {
+  display: none;
+}
+
+.detail-page.detail-part-view .detail-project.is-active-detail {
+  display: block;
+}
+
+.detail-page.detail-process-view .process-overview {
+  display: block;
 }
 
 .process-grid {
