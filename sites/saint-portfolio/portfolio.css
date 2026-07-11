@@ -585,6 +585,21 @@ main,
   object-fit: cover;
 }
 
+.assignment-flatlay-credit {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: 2px 2px 0 10px;
+  border-left: 2px solid var(--accent);
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.55;
+}
+
+.assignment-flatlay-credit strong,
+.case-study__credit strong {
+  color: var(--silver);
+}
+
 .feature-lead {
   margin: 20px 0 0;
   color: var(--silver);
@@ -1662,6 +1677,13 @@ main,
   margin: 14px 0 0;
   color: var(--silver);
   line-height: 1.75;
+}
+
+.case-study__credit {
+  padding-left: 10px;
+  border-left: 2px solid var(--accent);
+  color: var(--muted) !important;
+  font-size: 12px;
 }
 
 .case-media--split {
