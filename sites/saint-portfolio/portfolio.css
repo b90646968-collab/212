@@ -287,6 +287,10 @@ main,
   --accent: #e8b4aa;
 }
 
+.project-feature--lookbook {
+  --accent: #9fcbb8;
+}
+
 .hero-film--portrait {
   width: min(100%, 430px);
   justify-self: center;
@@ -558,6 +562,43 @@ main,
 
 .assignment-media .project-feature__media--portrait {
   width: 100%;
+}
+
+.lookbook-feature-media.project-feature__media {
+  display: grid;
+  grid-template-columns: minmax(180px, 0.72fr) minmax(0, 1.28fr);
+  align-items: start;
+  gap: 10px;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.lookbook-feature-video {
+  width: 100%;
+  border: 1px solid var(--line-strong);
+  border-radius: calc(var(--radius) + 3px);
+  box-shadow: 0 30px 74px rgba(0, 0, 0, 0.36);
+}
+
+.lookbook-feature-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.lookbook-feature-gallery figure {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--line-strong);
+  border-radius: 10px;
+  background: #111216;
+}
+
+.lookbook-feature-gallery img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
 }
 
 .feature-lead {
@@ -1892,6 +1933,19 @@ main,
 
   .project-feature h3 {
     font-size: clamp(24px, 7vw, 32px);
+  }
+
+  .lookbook-feature-media.project-feature__media {
+    grid-template-columns: 1fr;
+  }
+
+  .lookbook-feature-video {
+    width: min(100%, 340px);
+    justify-self: center;
+  }
+
+  .lookbook-feature-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .feature-notes div {
