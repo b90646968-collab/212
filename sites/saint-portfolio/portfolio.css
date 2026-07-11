@@ -564,38 +564,6 @@ main,
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.assignment-flatlay-gallery {
-  display: grid;
-  grid-column: 1 / -1;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-  gap: 8px;
-}
-
-.assignment-flatlay-gallery figure {
-  margin: 0;
-  overflow: hidden;
-  border: 1px solid var(--line-strong);
-  border-radius: 10px;
-  background: #111216;
-}
-
-.assignment-flatlay-gallery img {
-  width: 100%;
-  aspect-ratio: 1;
-  object-fit: cover;
-}
-
-.assignment-flatlay-credit {
-  grid-column: 1 / -1;
-  margin: 0;
-  padding: 2px 2px 0 10px;
-  border-left: 2px solid var(--accent);
-  color: var(--muted);
-  font-size: 11px;
-  line-height: 1.55;
-}
-
-.assignment-flatlay-credit strong,
 .case-study__credit strong {
   color: var(--silver);
 }
@@ -1977,9 +1945,7 @@ main,
     justify-self: center;
   }
 
-  .assignment-flatlay-gallery,
   .flatlay-gallery {
-    grid-column: auto;
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
