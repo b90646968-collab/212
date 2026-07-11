@@ -287,10 +287,6 @@ main,
   --accent: #e8b4aa;
 }
 
-.project-feature--lookbook {
-  --accent: #9fcbb8;
-}
-
 .hero-film--portrait {
   width: min(100%, 430px);
   justify-self: center;
@@ -564,30 +560,18 @@ main,
   width: 100%;
 }
 
-.lookbook-feature-media.project-feature__media {
-  display: grid;
-  grid-template-columns: minmax(180px, 0.72fr) minmax(0, 1.28fr);
-  align-items: start;
-  gap: 10px;
-  border: 0;
-  border-radius: 0;
-  box-shadow: none;
-}
-
-.lookbook-feature-video {
-  width: 100%;
-  border: 1px solid var(--line-strong);
-  border-radius: calc(var(--radius) + 3px);
-  box-shadow: 0 30px 74px rgba(0, 0, 0, 0.36);
-}
-
-.lookbook-feature-gallery {
-  display: grid;
+.assignment-media--expanded {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.assignment-flatlay-gallery {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: 8px;
 }
 
-.lookbook-feature-gallery figure {
+.assignment-flatlay-gallery figure {
   margin: 0;
   overflow: hidden;
   border: 1px solid var(--line-strong);
@@ -595,7 +579,7 @@ main,
   background: #111216;
 }
 
-.lookbook-feature-gallery img {
+.assignment-flatlay-gallery img {
   width: 100%;
   aspect-ratio: 1;
   object-fit: cover;
@@ -1696,6 +1680,32 @@ main,
   align-items: center;
 }
 
+.case-media--lookbook {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.34fr) minmax(0, 0.66fr);
+  gap: 12px;
+  align-items: start;
+}
+
+.lookbook-embed {
+  display: grid;
+  align-self: start;
+}
+
+.lookbook-embed figcaption a {
+  border-bottom: 1px solid currentColor;
+}
+
+.flatlay-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.flatlay-gallery img {
+  aspect-ratio: 1;
+}
+
 .case-media--portrait-review > .video-frame {
   width: min(100%, 420px);
   justify-self: center;
@@ -1910,6 +1920,7 @@ main,
   .media-grid--three,
   .media-grid--four,
     .case-media--split,
+    .case-media--lookbook,
     .aeroflex-film-grid,
     .aeroflex-gallery,
     .lumora-gallery,
@@ -1935,16 +1946,18 @@ main,
     font-size: clamp(24px, 7vw, 32px);
   }
 
-  .lookbook-feature-media.project-feature__media {
+  .assignment-media--expanded {
     grid-template-columns: 1fr;
   }
 
-  .lookbook-feature-video {
+  .assignment-media--expanded > .project-feature__media {
     width: min(100%, 340px);
     justify-self: center;
   }
 
-  .lookbook-feature-gallery {
+  .assignment-flatlay-gallery,
+  .flatlay-gallery {
+    grid-column: auto;
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
